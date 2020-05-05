@@ -11,29 +11,49 @@
 
   <body>
     <header>
+      <!-- Navbar -->
       <nav class="navbar navbar-fixed-top ms_navbar">
         <div class="container">
-
+          <div class="row">
+            <!-- Logo -->
+            <div class="logo col-xs-4 text-left">
+              <a href="#"><h2>Start Bootstrap</h2></a>
+            </div>
+            <!-- Menu -->
+            <div class="menu hidden-xs hidden-sm hidden-md col-lg-8 text-right">
+              <ul class="list-inline">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <!-- Burger -->
+            <div class="burger col-xs-8 hidden-lg text-right">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- Jumbo Section -->
-      <section id="jumbotron" class="ms_jumbotron ms_section-primary ">
+      <section id="jumbotron" class="ms_jumbotron ms_section-primary text-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
               <!-- Avatar -->
               <div class="ms_avatar">
-                &nbsp;
+                <img src="img/avataaars.svg" alt="Avatar">
               </div>
               <!-- Text -->
               <h1>Start Bootstrap</h1>
-              <div class="ms_divider">
-                <div><i class="fas fa-star"></i></div>
+              <div class="ms_divider ms_divider_primary">
+                <i class="fas fa-star"></i>
               </div>
-              <h2>Graphic Artist - Web Designer - Illustrator</h2>
+              <div class="ms_talents">
+                <h2>Graphic Artist - Web Designer - Illustrator</h2>
+              </div>
             </div>
           </div>
         </div>
@@ -43,42 +63,48 @@
       <section id="portfolio" class="ms_portfolio ms_section-secondary">
         <div class="container">
           <h2>Portfolio</h2>
-          <div class="ms_divider ms_divider_blue">
+          <div class="ms_divider ms_divider_secondary">
             <i class="fas fa-star"></i>
           </div>
 
+          <!-- Portfolio Items -->
           <div class="row ms_row-portfolio">
+            <!-- First Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_first-item ">
+                <img src="img/cabin.png" alt="Cabin">
               </div>
             </div>
+            <!-- Second Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_second-item ">
+                <img src="img/cake.png" alt="Cabin">
               </div>
             </div>
+            <!-- Third Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_third-item ">
+                <img src="img/circus.png" alt="Cabin">
               </div>
             </div>
+            <!-- Fourth Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_fourth-item ">
+                <img src="img/game.png" alt="Cabin">
               </div>
             </div>
+            <!-- Fifth Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_fifth-item ">
+                <img src="img/safe.png" alt="Cabin">
               </div>
             </div>
+            <!-- Sixth Item -->
             <div class="col-xs-12 col-md-6 col-lg-4">
-              <div class="ms_portfolio-item">
-
+              <div class="ms_avatar ms_portfolio-item  ms_sixth-item ">
+                <img src="img/submarine.png" alt="Cabin">
               </div>
             </div>
-
           </div>
 
         </div>
@@ -90,16 +116,21 @@
           <div class="text-center">
             <h2>About</h2>
             <div class="ms_divider">
-              <div><i class="fas fa-star"></i></div>
+              <i class="fas fa-star"></i>
             </div>
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum tenetur at expedita odit. Vitae ipsa officiis ad, repudiandae dicta eveniet ex aliquam molestias autem optio similique dolorem odit, eos architecto. </p>
+              <div class="col-xs-12 col-sm-offset-2 col-sm-4">
+                <p> Freelancer is a free bootstrap theme created by Start Bootstrap.
+                The download includes the complete source files including HTML, CSS,
+                and Javascript as well as optional LESS stylesheets for easy
+                customization.</p>
               </div>
-              <div class="col-xs-12 col-md-6">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum tenetur at expedita odit. Vitae ipsa officiis ad, repudiandae dicta eveniet ex aliquam molestias autem optio similique dolorem odit, eos architecto. </p>
+              <div class="col-xs-12 col-sm-4">
+                <p> Whether you're a student looking to showcase your work, a professional
+                looking to attract clients, or a graphic artist looking to share your
+                projects, this template is the perfect starting point!</p>
               </div>
             </div>
           </div>
@@ -110,42 +141,49 @@
       <section id="contact" class="ms_contact ms_section-secondary">
         <div class="text-center">
           <h2>Contact Me</h2>
-          <div class="ms_divider">
-            <div><i class="fas fa-star"></i></div>
+          <div class="ms_divider ms_divider_secondary">
+            <i class="fas fa-star"></i>
           </div>
         </div>
-        <div class="row">
-          <div class="container">
+        <div class="container">
+          <div class="row">
             <div class="col-xs-12 col-md-4">
             <div class="ms_form">
           </div>
-          </div>
         </div>
       </section>
-
-      <!-- Legal  -->
-      <section id="legal" class="ms_legal">
-        <div class="row text-center">
-          <div class="container">
-            <div class="col-xs-12 col-md-4">
-              <h3>Location</h3>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <h3>About the Web</h3>
-            </div>
-            <div class="col-xs-12 col-md-4">
-              <h3>About Freelancer</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </main>
 
     <footer>
+      <!-- Legal  -->
+      <div class="ms_legal">
+        <div class="container text-center">
+          <div class="row">
+            <!-- Location -->
+            <div class="ms_titles col-xs-12 col-md-4">
+              <h3>Location</h3>
+              <p>2215 John Daniel Drive Clark, MO 54243</p>
+            </div>
+            <!-- Social -->
+            <div class="ms_titles col-xs-12 col-md-4">
+              <h3>About the Web</h3>
+              <p></p>
+            </div>
+            <!-- Freelancer -->
+            <div class="ms_titles col-xs-12 col-md-4">
+              <h3>About Freelancer</h3>
+              <p>Freelance is a free to use, open source Bootstrap theme created by
+              <a href="#" style="color:#1cb999;">Start Bootstrap</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
       <div class="ms_navbar">
         <h3>Copyright <i class="far fa-copyright"></i> Your Website 2019</h3>
       </div>
+
     </footer>
 
   </body>

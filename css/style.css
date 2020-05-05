@@ -7,37 +7,85 @@ section {
   padding: 32px 0;
 }
 
-/*** Section Rules ***/
-
-.ms_section-primary {
-  background-color: #1abc9c;
-  color: #fff;
-}
-
-.ms_section-secondary {
-  color: #2c3e50;
-}
-
-.ms_section-secondary .ms_section-title {
-  color: #333;
+i {
+  font-size: 18px;
 }
 
 h1, h2{
   color white;
   text-transform: uppercase;
 }
+.ms_divider::before,
+.ms_divider::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 4px;
+  background-color: #fff;
+  position: relative;
+  top: -3px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-/*** Components ***/
+.ms_divider_secondary::before,
+.ms_divider_secondary::after {
+  background-color: #2d3e50;
+}
+
+.ms_avatar img{
+  height: 250px;
+  margin: 25px auto;
+}
+
+/*** Section Rules ***/
+
+.ms_section-primary {
+  background-color: #1abc9c;
+  color: #fff;
+}
+.ms_section-secondary {
+  color: #2c3e50;
+}
+.ms_section-secondary .ms_section-title {
+  color: #333;
+}
+
+/*** Navbar ***/
 .ms_navbar {
   background-color: #2c3e50;
-  height: 70px;
+  line-height: 70px;
+}
+.ms_navbar h2{
+  display: block;
+  font-size: 25px;
+}
+.ms_navbar .list-inline li{
+  padding-left: 25px;
+}
+.ms_navbar a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.ms_navbar a:hover {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.ms_navbar .burger {
+  color: white;
 }
 
-.ms_jumbotron {
-  text-align: center;
-  padding: 32px 0;
+/*** Jumbotron ***/
+.ms_jumbotron h1{
+  font-size: 50px;
 }
-
+.ms_jumbotron h2 {
+  font-size: 20px;
+}
+/*** Portfolio ***/
 .ms_portfolio {
   text-align: center;
 }
@@ -45,12 +93,29 @@ h1, h2{
 .ms_row-portfolio {
   margin-top: 20px;
 }
-
 .ms_portfolio-item {
   height: 300px;
-  background: #ba4b62;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.ms_first-item{
+  background: #ba4b62;
+}
+.ms_second-item{
+  background: #1fa4b6;
+}
+.ms_third-item{
+  background: #140f0f;
+}
+.ms_fourth-item{
+  background: #1d82c1;
+}
+.ms_fifth-item{
+  background: #0e38b5;
+}
+.ms_sixth-item{
+  background: #cdb2a3;
 }
 
 /*** About ***/
@@ -61,11 +126,13 @@ h1, h2{
 
 /*** Contact ***/
 
-/*** Legal ***/
+/*** Footer  ***/
 
 .ms_legal {
   background-color: #3a546c;
+  color: white;
   margin: 0;
+  padding: 32px 0;
 }
 
 .ms_legal h3{
@@ -74,7 +141,9 @@ h1, h2{
   font-size: 15px;
 }
 
-/*** Footer  ***/
+.ms_titles h3{
+  text-transform: uppercase;
+}
 
 .ms_navbar h3 {
   text-align: center;
