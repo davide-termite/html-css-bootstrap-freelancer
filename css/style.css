@@ -86,6 +86,7 @@ h1, h2{
   font-size: 20px;
 }
 /*** Portfolio ***/
+
 .ms_portfolio {
   text-align: center;
 }
@@ -119,14 +120,29 @@ h1, h2{
 }
 
 /*** About ***/
-.ms-wrapper {
-  /* width: 60%;
-  margin: 0 auto; */
-}
 
 /*** Contact ***/
+.form-group {
+  border: none;
+  margin-top: 20px;
+}
+.ms_form textarea{
+  max-width: 100%;
+  min-height: 20px;
+}
 
+.btn-success {
+  background-color: #1abc9c!important;
+}
 /*** Footer  ***/
+.ms_socials li{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.ms_socials i{
+  height: 40px;
+  color: white;
+}
 
 .ms_legal {
   background-color: #3a546c;
@@ -134,17 +150,14 @@ h1, h2{
   margin: 0;
   padding: 32px 0;
 }
-
 .ms_legal h3{
   text-align: center;
   color: #fff;
   font-size: 15px;
 }
-
 .ms_titles h3{
   text-transform: uppercase;
 }
-
 .ms_navbar h3 {
   text-align: center;
   color: #fff;
